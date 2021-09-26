@@ -24,15 +24,16 @@ print("License : LS MARTIN")
 
 print(Fore.LIGHTRED_EX)
 #Options Section
-print("Press 1 To Find Percentage: ")
-print("Press 2 To Find Total Marks: ")
-print("Press 3 To FInd Your Marks: ")
+print("[-]Press 1 To Find Percentage")
+print("[-]Press 2 To Find Total Number")
+print("[-]Press 3 To Find Number")
+print("[-]Enter 4 To Exit")
 time.sleep(1)
 #What to find:
 print("                                                                           ")
 
 
-q = int(input("Select What You Want To Find: "))
+q = int(input("[ - ] Enter Choice: "))
 # a = Your marks 
 # b = total marks 
 # p = Percentage
@@ -53,6 +54,19 @@ elif q==3:
     b = int(input("Enter Total Marks: "))
     a = (p*b/100)
     print("Your Marks is: ",a)
+
+elif q==4:
+    time.sleep(1)
+    print(Fore.LIGHTGREEN_EX)
+    print("Thanks For using this Tool")
+    print("This tool will be developed Further")
+    time.sleep(4)
+    exit()
+else:
+    print("Invalid Input")
+
+
+
 time.sleep(2)
 
 #Outro Section
